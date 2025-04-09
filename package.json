@@ -1,0 +1,21 @@
+{
+  "name": "todo-typescript",
+  "version": "1.0.0",
+  "description": "A simple Todo List application built with TypeScript",
+  "main": "dist/todo.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/todo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todo",
+    "typescript",
+    "task-manager"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+} 

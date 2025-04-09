@@ -5,7 +5,8 @@
   "main": "dist/todo.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/todo.js",
+    "start": "lite-server",
+    "dev": "tsc --watch & lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "lite-server": "^2.6.1",
     "typescript": "^5.3.3"
   }
-} 
+}

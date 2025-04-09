@@ -1,6 +1,6 @@
 # TypeScript Todo List Application
 
-A simple and efficient Todo List application built with TypeScript. This application allows users to manage their tasks with features like adding, editing, and deleting todos.
+A simple and efficient Todo List application built with TypeScript. This application provides a clean web interface for managing your tasks with features like adding, editing, and deleting todos.
 
 ## Features
 
@@ -9,7 +9,8 @@ A simple and efficient Todo List application built with TypeScript. This applica
 - Delete todo items
 - Mark todos as completed
 - View all todos
-- Get specific todo by ID
+- Clean and responsive web interface
+- Persistent state in browser
 
 ## Prerequisites
 
@@ -39,50 +40,49 @@ npm run build
 
 ## Usage
 
-1. Start the application:
+1. Start the development server:
 
 ```bash
 npm start
 ```
 
-2. The application will run in the console, demonstrating the basic functionality with some sample todos.
+2. Open your browser and navigate to `http://localhost:3000`
+
+3. For development with auto-reload:
+
+```bash
+npm run dev
+```
 
 ## Project Structure
 
 ```
 todo-typescript/
 ├── src/
-│   └── todo.ts        # Main application code
+│   ├── todo.ts        # Main TypeScript code
+│   └── index.html     # Web interface
 ├── dist/              # Compiled JavaScript files
 ├── package.json       # Project dependencies and scripts
 ├── tsconfig.json      # TypeScript configuration
 └── README.md          # Project documentation
 ```
 
-## Example Usage
+## Features
 
-```typescript
-const todoList = new TodoList();
+### Adding Todos
 
-// Add a new todo
-todoList.addTodo('Learn TypeScript');
+- Type your todo in the input field
+- Press Enter or click "Add Todo" button
 
-// Edit a todo
-todoList.editTodo(1, 'Master TypeScript');
+### Managing Todos
 
-// Toggle completion status
-todoList.toggleTodo(1);
-
-// Remove a todo
-todoList.removeTodo(1);
-
-// Get all todos
-const allTodos = todoList.getAllTodos();
-```
+- Click the checkbox to mark a todo as completed
+- Click "Edit" to modify a todo's text
+- Click "Delete" to remove a todo
 
 ## Screenshots
 
-[Add screenshots of the application running in the console here]
+[Add screenshots of the web interface here]
 
 ## Contributing
 
